@@ -9,6 +9,7 @@
 - [ ] Change to only send customer/oper object to server cust instead of whole arraylist??
   - line 68 and 75
 <br/>
+
 **ServerCust**
 - [ ] update cust object and account object
   - lines
