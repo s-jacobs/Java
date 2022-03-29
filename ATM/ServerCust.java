@@ -66,7 +66,7 @@ public class ServerCust {
                             transBtwTwo(a, id);
                             break;
                         case 6:
-                            System.out.println("You are offically logged out.\nThank you for banking with us! Have a nice day!\n\n");
+                            System.out.println("You are officially logged out.\nThank you for banking with us! Have a nice day!\n\n");
                             cont = false;
                             break;
                         default:
