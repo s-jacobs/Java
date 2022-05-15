@@ -1,3 +1,4 @@
+#ReadMe
 To run first execute mallCockatoos.sql, then run mallDriver1
 
 admin id | usernames | passwords
