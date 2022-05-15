@@ -6,7 +6,7 @@ admin id | usernames | passwords
 100|user|pass
 101|admin|admin
 
-###### SJacobs
+##### SJacobs
 * listSales1
 * shop (added validation)
 * getCart(fixed minor errors)
