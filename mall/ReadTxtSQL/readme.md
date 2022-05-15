@@ -2,9 +2,9 @@ To run first execute mallCockatoos.sql, then run mallDriver1
 
 admin id | usernames | passwords
 ---------|-----------|------------
-	 100 |	user 	 |   pass
+100      | user      |   pass
 ---------|-----------|------------
-	 101 |	admin 	 |   admin
+101 	 |admin	     |   admin
 
 SJacobs
     - listSales1, shop (added validation), getCart(fixed minor errors), checkCart 
