@@ -8,42 +8,31 @@ import java.text.NumberFormat;
  * Item Class used in MallDriver1
  * Used to create items to add to Shopping Cart
  * @author M Royal and S Jacobs
+ * Created 2018
+ * Revised by SJ 5/15/2022 - Changed formating and updated Java Doc
  */
 public class Item implements Serializable, Cloneable{
-    /**
-     * Name of item
-     */
+    /**  Item name  */
     private String itemName;
-    /**
-     * ID code of item
-     */
+    /**  Item identification code  */
     private String itemID;
-    /**
-     * Store ID where item is located
-     */
+    /**  Store identification code where item was purchased  */
     private String storeID;
-    /**
-     * Price of item
-     */
+    /**  Item price  */
     private double price;
-    /**
-     * Quantity of item
-     */
+    /**  Item quantity  */
     private int number;
 
-    /**
-     * No argument constructor of Item object
-     */
-    public Item() {
-    }
+    /**  No argument constructor of Item object  */
+    public Item() { }
 
     /**
      * Full constructor of Item object
-     * @param itemName Name of item
-     * @param itemID ID of item
-     * @param storeID Store where item is located
-     * @param price Price of item
-     * @param number Number of items
+     * @param itemName The name of item
+     * @param itemID   The ID code of item
+     * @param storeID  The ID code for store where item is located
+     * @param price    The price of item
+     * @param number   The number of items purchased
      */
     public Item(String itemName, String itemID, String storeID, double price, int number) {
         this.itemName = itemName;
@@ -53,6 +42,7 @@ public class Item implements Serializable, Cloneable{
         this.number = number;
     }
     
+    // Use for store view
     @Override
     public String toString()
     {
@@ -65,8 +55,9 @@ public class Item implements Serializable, Cloneable{
     // used for the customer to see
 
     /**
-     *
-     * @return Returns toString for customer view
+     * To string method used to print the item ID, item name, store ID, price, 
+     * and quantity 
+     * @return String  String representation of the sale to show customer
      */
     public String toStringC()
     {
@@ -76,89 +67,54 @@ public class Item implements Serializable, Cloneable{
                 " and you bought " + getNumber() + " of them";
     }
     
-    //needs getters and setters
-
-    /**
-     *
-     * @return Returns Item Name
-     */
-
+    //getters and setters
+    /**  @return Returns Item Name  */
     public String getItemName() {
         return itemName;
     }
 
-    /**
-     *
-     * @param itemName Sets Item Name
-     */
+    /**  @param itemName Sets Item Name  */
     public void setItemName(String itemName) {
         this.itemName = itemName;
     }
 
-    /**
-     *
-     * @return Returns Item ID
-     */
+    /**  @return Returns Item ID  */
     public String getItemID() {
         return itemID;
     }
 
-    /**
-     *
-     * @param itemID Sets Item ID
-     */
+    /**  @param itemID Sets Item ID  */
     public void setItemID(String itemID) {
         this.itemID = itemID;
     }
 
-    /**
-     *
-     * @return Returns Store ID of Item
-     */
+    /**  @return Returns Store ID of Item  */
     public String getStoreID() {
         return storeID;
     }
 
-    /**
-     *
-     * @param storeID Sets Store ID of Item
-     */
+    /**  @param storeID Sets Store ID of Item  */
     public void setStoreID(String storeID) {
         this.storeID = storeID;
     }
 
-    /**
-     *
-     * @return Returns Price of item
-     */
+    /**  @return Returns Price of item  */
     public double getPrice() {
         return price;
     }
 
-    /**
-     *
-     * @param price Sets Price of item
-     */
+    /**  @param price Sets Price of item  */
     public void setPrice(double price) {
         this.price = price;
     }
 
-    /**
-     *
-     * @return Returns Number of items
-     */
+    /**  @return Returns Number of items  */
     public int getNumber() {
         return number;
     }
 
-    /**
-     *
-     * @param number Sets number of items
-     */
+    /**  @param number Sets number of items  */
     public void setNumber(int number) {
         this.number = number;
     }
-
-    
-
 }

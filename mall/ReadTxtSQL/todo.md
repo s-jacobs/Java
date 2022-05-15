@@ -1,12 +1,13 @@
 # TODO
 
-Update JavaDocs
-
-Convert to gui (Probably JavaFX)
-
+	[] Update JavaDocs
+	[] Convert to gui (Probably JavaFX)
+	[]
 <br>
 
-
+ShoppingCartDB.java
+* Rename to just ShoppingCart?
+* line 36/52  -  Check if need first/last name in constructors
 
 
 addItem
