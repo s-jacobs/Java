@@ -1,15 +1,13 @@
-
 package beans;
 
 import java.io.Serializable;
 import java.text.NumberFormat;
 
 /**
- * Item Class used in MallDriver1
  * Used to create items to add to Shopping Cart
+ * <br> Created 2018
+ * <br> Revised by SJ 5/15/2022 - Changed formating and updated Java Doc
  * @author M Royal and S Jacobs
- * Created 2018
- * Revised by SJ 5/15/2022 - Changed formating and updated Java Doc
  */
 public class Item implements Serializable, Cloneable{
     /**  Item name  */

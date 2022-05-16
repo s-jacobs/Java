@@ -4,9 +4,10 @@ import java.util.ArrayList;
 
 /**
  * Class to create ShoppingCart Object
- * @author M Royal and S Jacobs
- * Created 2018
- * Revised by SJ 5/15/2022  - Changed formating and updated Java Doc
+ * <br> Created 2018
+ * <br> Revised by SJ 5/15/2022  - Changed formating and updated Java Doc
+ * @author M Royal
+ * @author S Jacobs
  */
 public class ShoppingCartDB {
     /**  First Name of customer  */
@@ -48,8 +49,9 @@ public class ShoppingCartDB {
      * @param firstName First Name of the customer
      * @param items     Array of Items in Shopping Cart
      * @param active    Active status of Shopping Cart
+     * @see Item
      */
-    public ShoppingCartDB(int custID, String lastName, String firstName,ArrayList<Item> items,String active) {
+    public ShoppingCartDB(int custID, String lastName, String firstName,ArrayList<Item> items, String active) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.custID = custID;

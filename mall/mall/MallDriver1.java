@@ -15,18 +15,25 @@ import java.util.logging.Logger;
  * @author M Royal and S Jacobs
  */
 public class MallDriver1 {
-    /**
-     * Connection to database used as needed in menu items
-     */
+    /**  Connection to database used as needed in menu items  */
     private static Connection con;
-    /**
-     * Scanner object used throughout methods of MallDriver1 class
-     */
+    /**  Scanner object used throughout methods of MallDriver1 class  */
     private static Scanner scan = new Scanner(System.in);
     
     /**
-     * Main method
-     * @param args
+     * @param args  The command line arguments
+     * @exception InputMismatchException
+     * @see #menu()
+     * @see Scanner
+     * @see beans.ShoppingCartDB
+     * @see DBUtilities#createConnection()
+     * @see DBUtilities#checkConnect(Connection)
+     * @see MenuItem#MenuItem()
+     * @see MenuItem#adminLogin(con)
+     * @see MenuItem#checkCart(Connection, ShoppingCartDB, ShoppingCartDB)
+     * @see MenuItem#getCart(Connection)
+     * @see MenuItem#shop(Connection, ShoppingCartDB, ShoppingCartDB)
+     * @see MenuItem#checkout(Connection, ShoppingCartDB)
      */
     public static void main(String[] args) {
         
@@ -45,7 +52,6 @@ public class MallDriver1 {
             choice = menu();
             }catch(InputMismatchException e){
                 choice = 0;
-                
             }
             
             if (choice == 1) {                                                  //connect to database
@@ -172,8 +178,11 @@ public class MallDriver1 {
     }
 
     /**
-     * Method to display Main Menu
-     * @return Returns the users menu choice
+     * Displays the menu with the options for a customer. Also handles input 
+     *  validation for the menu item option the user wants to select.
+     * @return the numerical representation of the menu item the user selected (1-9)
+     * @exception InputMismatchException If an error occurs due to the user not entering a digit
+     * @see Scanner
      */
     public static int menu() {
         Scanner scan = new Scanner(System.in);
@@ -213,9 +222,13 @@ public class MallDriver1 {
     }
     
     /**
-     * Method that displays Administrator's Menu
-     * @param validLogin Administrator login details
-     * @return Returns Administrator's menu choice
+     * Displays the menu with the administrative options. Also handles input 
+     *  validation for the menu item the administrator wants to select. Requires 
+     *  a valid administrator login. 
+     * @param validLogin boolean representation of if the administrator login was successful
+     * @return the numerical representation of the menu item the user selected (1-7)
+     * @exception InputMismatchException If an error occurs due to the user not entering a digit
+     * @see Scanner
      */
     public static int adminMenu(boolean validLogin){
         int ans = 0;
