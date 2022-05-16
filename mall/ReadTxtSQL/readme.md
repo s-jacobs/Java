@@ -24,9 +24,21 @@ admin id | usernames | passwords
 * mallCockatoos.sql
 
 ###### MRoyal
-    - checkout, getCart, shop, checkCart, storedProcs, searchName, searchItem,
-	printInfo, printStore, database connection, ShoppingCartDB, DBUtilities,
-	JavaDocs, mallCockatoos.sql, ShoppingCartDB
+* checkout
+* getCart
+* shop
+* checkCart
+* storedProcs
+* searchName
+* searchItem
+* printInfo
+* printStore
+* database connection
+* ShoppingCartDB
+* DBUtilities
+* JavaDocs
+* mallCockatoos.sql
+* ShoppingCartDB
 
 
 
